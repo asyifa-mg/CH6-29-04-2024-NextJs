@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/header"; //dikasih @untuk mengarah ke root
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,6 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <h1 className="bg-red-800">HELLO FSW 1 DARI ROOT LAYOUT</h1>
+      <Header />
       <body className={inter.className}>{children}</body>
     </html>
   );
